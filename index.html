@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coders Profiles | Git + Github Practical @Stutern 1.0</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Gamja+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Practical Git + Github</h1>
+        <h2>Let's get our hands dirty...</h2>
+    </header>
+    <main>
+        <div style="margin-bottom: 15px; text-align: center;">
+
+            <button id="newProfileBtn">Create New Profile</button>
+
+            <br>
+            <span><strong>A total of <span id="profilesCount"></span> profiles</strong></span>
+
+            <p><em>Engineers, let's connect on social media 👌</em></p>
+        </div>
+
+        <div id="pBioCopy">
+            <label for="profileBioHTML">Copy Profile Code Below <small>(<strong>Add manually to page</strong>)</small></label>
+            <br>
+            <textarea name="profileBioHTML" id="profileBioHTML" placeholder="copy generated code from here" style="min-height:70px;max-height:150px;width:100%;"></textarea>
+        </div>
+        
+        <hr>
+
+        <section id="profiles">
+            <dl class="personProfile">
+                <dt class="profileName">Tony Ayeni</dt>
+                    <dd><strong>Github</strong>: <span><a href="https://github.com/tonyfrenzy" target="_blank">https://github.com/tonyfrenzy</a></span></dd>
+                    <dd><strong>LinkedIn</strong>: <span><a href="https://www.linkedin.com/in/opeyemi-tony-ayeni-4ab7998b/" target="_blank">https://www.linkedin.com/in/opeyemi-tony-ayeni-4ab7998b/</a></span></dd>
+                    <dd><strong>Twitter</strong>: <span><a href="https://twitter.com/_tonyfrenzy" target="_blank">https://twitter.com/_tonyfrenzy</a></span></dd>
+                    <dd><img src="https://avatars.githubusercontent.com/u/16845280" alt="tonyfrenzy"></dd>
+
+                    <dd><strong>Bio</strong>: <span> Brag!!! here about your achievements.</span></dd>
+                    <br>
+                    <dd><strong>Total Profiles (before)</strong>: <span>0</span></dd>
+                    <dd><strong>Total Profiles (after)</strong>: <span>1</span></dd>
+            </dl>
+
+            <!-- Add/Paste your profle HTML below this comment -->
+            <!-- OVERWRITE THIS LINE WITH HTML -->
+            <!-- End of profile -->
+        </section>
+
+        <!-- The Modal -->
+        <div id="newProfileModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="newProfile">
+                    <h3>Add Your Profile</h3>
+
+                    <label for="profileName">Name</label>
+                    <input id="profileName" placeholder="Profile Name" type="text" required>
+                    <br>
+
+                    <label for="profileGithub">Github Profile Link <small>(full url)</small></label>
+                    <input id="profileGithub" placeholder="https://github.com/username" type="url" required>
+                    <br>
+
+                    <label for="profileLinkedIn">LinkedIn Profile Link <small>(full url)</small></label>
+                    <input id="profileLinkedIn" placeholder="https://www.linkedin.com/in/name-4ab7998b/" type="url" required>
+                    <br>
+
+                    <label for="profileTwitter">Twitter Profile Link <small>(full url)</small></label>
+                    <input id="profileTwitter" placeholder="https://twitter.com/username" type="url">
+                    <br>
+
+                    <label for="profileBio">Bio <small>(brag all you can!!)</small></label>
+                    <textarea name="profileBio" id="profileBio" placeholder="Brag here about your achievements..." style="min-height:70px;max-height:150px;min-width:50%;max-width:100%;"></textarea>
+
+                    <br>
+                    <label for="img">Image Link</label>
+                    <input name="img" id="profileImgSource" placeholder="image link" type="url">
+
+                    <br>
+                    <div class="profileActionButtons">
+                        <button id="cancelBtn">Cancel</button>
+                        <button id="addBtn">Generate Profile HTML</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2021 Stutern 1.0 Students. No Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
