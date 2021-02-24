@@ -97,8 +97,8 @@ form p {
 	display: inline-block;
 }
 
-form input {
-	box-shadow: 3px 3px 0 0 #e4572e;
+label {
+	float: right;
 }
 
 #newProfileBtn {
@@ -110,11 +110,11 @@ form input {
 	margin: 0 auto; 
 	padding:10px;
 }
-.newProfile h3 {
+#newProfile h3 {
 	text-align: center;
 }
-.newProfile > input,
-.newProfile > textarea {
+#newProfile > input,
+#newProfile > textarea {
 	width: 100%;
 	display: block;
 	padding: 5px;
