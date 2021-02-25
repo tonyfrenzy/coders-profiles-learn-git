@@ -1,7 +1,6 @@
 var profilesCount = function () {
   var profiles = document.querySelectorAll('dl.personProfile');
   var profilesCount = profiles.length;
-  console.log(profilesCount);
 	var profilesCountDisplay = document.getElementById('profilesCount');
 	profilesCountDisplay.innerText = profilesCount;
 }
@@ -135,7 +134,7 @@ addBtn.onclick = function(event) {
       profileBioNodeSpan.innerText = profileBio.value;
 
       console.log(newProfile);
-      profileBioHTML.value = (newProfile.innerHTML);
+      profileBioHTML.value = (newProfile.outerHTML);
 
       var profiles = document.getElementById("profiles");
       var fChild = profiles.firstChild;
