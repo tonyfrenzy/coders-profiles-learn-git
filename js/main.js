@@ -69,9 +69,6 @@ addBtn.onclick = function() {
   //         <dd><img src="images/spatula.gif"></dd>
 
   //         <dd><strong class="pKey">Bio</strong>: <span class="pValue"> Brag!!! here about your achievemeants. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium ex tempore cupiditate consequatur magnam quia, explicabo eaque, architecto, voluptatum perspiciatis. Quas minima nostrum sequi id, odit dolore illo labore.</span></dd>
-  //         <br>
-  //         <dd><strong class="pKey">Total Profiles (before)</strong>: <span>#</span></dd>
-  //         <dd><strong class="pKey">Total Profiles (after)</strong>: <span>#</span></dd>
   // </dl>
   //
   var newProfile = document.createElement("dl");
@@ -98,13 +95,6 @@ addBtn.onclick = function() {
     var profileBioNodeStrong = document.createElement("strong");
     var profileBioNodeSpan = document.createElement("span");
 
-  var totalBeforeNode = document.createElement("dd");
-    var totalBeforeNodeStrong = document.createElement("strong");
-    var totalBeforeNodeSpan = document.createElement("span");
-  var totalAfterNode = document.createElement("dd");
-    var totalAfterNodeStrong = document.createElement("strong");
-    var totalAfterNodeSpan = document.createElement("span");
-
   // Construct profile HTML
   newProfile.classList.add('personProfile');
   newProfile.appendChild(profileNameNode);
@@ -129,14 +119,6 @@ addBtn.onclick = function() {
   newProfile.appendChild(profileBioNode);
     profileBioNode.appendChild(profileBioNodeStrong);// <dd><strong>Bio:</strong>
     profileBioNode.appendChild(profileBioNodeSpan);  //     <span></span></dd>
-
-  newProfile.appendChild(totalBeforeNode);
-    totalBeforeNode.appendChild(totalBeforeNodeStrong);// <dd><strong>Total Profiles (before):</strong>
-    totalBeforeNode.appendChild(totalBeforeNodeSpan);  //     <span></span></dd>
-
-  newProfile.appendChild(totalAfterNode);
-    totalAfterNode.appendChild(totalAfterNodeStrong);// <dd><strong>Total Profiles (after):</strong>
-    totalAfterNode.appendChild(totalAfterNodeSpan);  //     <span></span></dd>
   
 
 
@@ -161,12 +143,6 @@ addBtn.onclick = function() {
 
   profileBioNodeStrong.innerText = 'Bio :';
     profileBioNodeSpan.innerText = profileBio.value;
-
-  totalBeforeNodeStrong.innerText = 'Total Profiles (before) :';
-    totalBeforeNodeSpan.innerText = '# (record immedaitely after cloning)';
-
-  totalAfterNodeStrong.innerText = 'Total Profiles (after) :';
-    totalAfterNodeSpan.innerText = '# (record after adding your profile and git fetch)';
 
     console.log(newProfile);
     profileBioHTML.value = newProfile;
