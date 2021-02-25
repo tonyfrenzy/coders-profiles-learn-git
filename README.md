@@ -3,15 +3,22 @@
 - A basic project to allow colleagues learn git, github.
 
 ## Steps to follow
-#### Get a copy
-1. Fork this repo
-2. Clone to your local computer
+#### Get a copy of the project
+1. Fork this repo.
+
+2. Clone to your local computer.
+
 3. Open index.html in browser and write down current total number of profiles.
-4. Click the "Add New Profile" button on the page, a modal comes up. Fill in your correct profile links
-5. Click "Generate Profile HTML" button on the modal form (modal closes, profile HTML ought to be available in the textarea but working at the moment). Next is a temporary workaround...
+
+4. Click the "Add New Profile" button on the page, a modal comes up. Fill in your correct profile links.
+
+5. Click "Generate Profile HTML" button on the modal form 
+	(modal closes, profile HTML ought to be available in the textarea but not working at the moment). Next is a temporary workaround...
 	1. Do not refresh page. On Chrome browser, right click and select "inspect" or do `CTRL + Shift + I`  to bring developers tool up.
-	2. Click on "console" tab. Right-click on the console output '<dl class>.....' and copy as html. (You could have created this manually by simply copying a previous profile and editing the content. This oculd be prone to errors but there are many ways to skin a cat afterall. What's the fun of coding if not to automate boring stuff?
+	2. Click on "console" tab. Right-click on the console output '<dl class>.....' and copy as html. This could be created manually by copying a previous profile and editing the content. There are many ways to skin a cat but what's the fun of coding if not to automate boring stuff?
+
 6. Paste the copied HTML code below the last profile within the index.html code and save.
+
 7. Use profile counts noted up there to update the "Total Profiles (before)" section.
 
 

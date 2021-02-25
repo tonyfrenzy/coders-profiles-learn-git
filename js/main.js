@@ -26,12 +26,19 @@ var profileBio = document.getElementById("profileBio");
 var profileImgSource = document.getElementById("profileImgSource");
 var profileBioHTML = document.getElementById("profileBioHTML");
 var pBioCopy = document.getElementById("pBioCopy");
+var requiredFieldsAlert = document.getElementById("requiredFieldsAlert");
+
 
 var span = document.getElementsByClassName("close")[0];
 var cancelBtn = document.getElementById("cancelBtn");
 
 newProfileBtn.onclick = function() {
   newProfileModal.style.display = "block";
+
+  // Pre-populate for easier form filling
+  profileGithub.value = "https://github.com/---username";
+  profileLinkedIn.value = "https://www.linkedin.com/in/---username-id";
+  profileTwitter.value = "https://twitter.com/---username";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -42,10 +49,15 @@ cancelBtn.onclick = function() {
   event.preventDefault();
   hideClearModal();
 }
+/** -- end Modal related -- */
 
 addBtn.onclick = function() {
   event.preventDefault();
-/** -- end Modal related -- */
+
+  if (profileName.value == "" || profileGithub.value == "https://github.com/---username") {
+    requiredFieldsAlert.style.display = "block";
+    return false;
+  }
 
   /** -- Constructed Tag -- */
   // <dl class="personProfile">
