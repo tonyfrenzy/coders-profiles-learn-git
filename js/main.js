@@ -166,7 +166,7 @@ addBtn.onclick = function() {
     totalBeforeNodeSpan.innerText = '# (record immedaitely after cloning)';
 
   totalAfterNodeStrong.innerText = 'Total Profiles (after) :';
-    totalAfterNodeSpan.innerText = '# (record after adding and fetching)';
+    totalAfterNodeSpan.innerText = '# (record after adding your profile and git fetch)';
 
     console.log(newProfile);
     profileBioHTML.value = newProfile;

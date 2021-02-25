@@ -35,4 +35,4 @@
 	8. `git push` back to your remote branch
 	9. create a pull request on github for your updates to be added to the original project.
 
-- Go to here to see the live project.
+- View the live project here: https://flamboyant-shannon-69d651.netlify.app/

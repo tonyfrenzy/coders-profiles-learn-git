@@ -171,6 +171,14 @@ label {
 .profileActionButtons button {
 	padding: 10px;
 	min-width: 100px;
+	border-radius: 5px;
+}
+
+#profileBio button {
+	min-height:70px;
+	max-height:150px;
+	min-width:50%;
+	max-width:100%;"
 }
 
 #requiredFieldsAlert {
