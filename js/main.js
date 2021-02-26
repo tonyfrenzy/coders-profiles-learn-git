@@ -34,9 +34,9 @@ var cancelBtn = document.getElementById("cancelBtn");
   newProfileModal.style.display = "block";
 
   // Pre-populate for easier form filling
-  profileGithub.value = "https://github.com/---username";
-  profileLinkedIn.value = "https://www.linkedin.com/in/---username-id";
-  profileTwitter.value = "https://twitter.com/---username";
+  profileGithub.placeholder = "https://github.com/---username";
+  profileLinkedIn.placeholder = "https://www.linkedin.com/in/---username-id";
+  profileTwitter.placeholder = "https://twitter.com/---username";
 }
 
 // When the user clicks on <span> (x), close the modal
