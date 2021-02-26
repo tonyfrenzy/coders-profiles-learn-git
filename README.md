@@ -12,11 +12,9 @@
 
 4. Click the "Add New Profile" button on the page, a modal comes up. Fill in your correct profile links.
 
-5. Click "Generate Profile HTML" button on the modal form (modal closes, profile HTML ought to be available in the textarea but not working at the moment). Below is a temporary workaround...
-	1. Do not refresh page. On Chrome browser, right click and select "inspect" or do `CTRL + Shift + I`  to bring developers tool up.
-	2. Click on "console" tab. Right-click on the console output '<dl class>...</dl>' and copy as html. This could be created manually by copying a previous profile and editing the content. What's the fun of coding if not to automate boring stuff?
+5. Click "Generate Profile HTML" button on the modal form, pprofile HTML will be available in the textarea.
 
-6. Paste the copied HTML code below the last profile within the **index.html** file and save.
+6. Paste the copied HTML code below the last profile (`<dl></dl>` tag) within the **index.html** file and save.
 
 
 #### Relevant Git and Github Activities
