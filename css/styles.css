@@ -66,8 +66,8 @@ dd {
 dd img {
 	float: right;
 	max-width: 120px;
-	max-height: 120px;
-	margin-top: -120px;
+	position: relative;
+	bottom: 7em;
 }
 
 .pKey,
